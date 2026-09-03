@@ -1,0 +1,20 @@
+# ai-tennis-poc — Python dependencies
+# Tested with Python 3.12 on Windows 11.
+#
+# Install with:
+#   python -m venv .venv
+#   .venv\Scripts\activate        (Windows)
+#   source .venv/bin/activate     (macOS / Linux)
+#   pip install -r requirements.txt
+
+# --- Core computer vision / pose estimation -------------------------------
+mediapipe>=0.10.14        # Pose Landmarker (33 body landmarks, BlazePose GHUM)
+opencv-python>=4.9.0      # Video decode / encode, drawing primitives
+
+# --- Numerics -------------------------------------------------------------
+numpy>=1.26.0             # Vector maths for angles, rotations, trajectories
+scipy>=1.11.0             # Savitzky-Golay temporal smoothing filter
+pandas>=2.1.0             # Per-frame metrics -> CSV
+
+# --- Plotting -------------------------------------------------------------
+matplotlib>=3.8.0         # Angle-vs-time and trajectory PNG plots

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Pose model weights: large binaries, downloaded automatically on first run.
+models/*.task
+
+# Generated results
+output/
+
+# Input clips: keep the attributed sample, ignore whatever the user adds.
+input/*
+!input/sample_serve.mp4
+!input/SAMPLE_CLIP_ATTRIBUTION.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local tooling settings
+.claude/settings.local.json
